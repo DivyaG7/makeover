@@ -1,0 +1,146 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-section {
+        padding: 10rem 2rem !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar {
+        width: 90vw !important;
+    }
+
+    .hero-section {
+        padding: 5rem 4rem !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .h-gallery img {
+        width: 100%;
+        /* Make images responsive */
+        height: auto;
+        /* Set a fixed height for all images */
+        object-fit: cover;
+        /* Ensure the image covers the area without distortion */
+    }
+
+    .testimonial-box-wrapper {
+        animation: scroll-mobile 15s linear infinite;
+        /* Adjust animation duration for mobile */
+        gap: 30px;
+        /* Maintain the scroll effect for mobile view */
+    }
+
+    .testimonial-box {
+        flex: 0 0 100%;
+        /* Full width for each box on mobile */
+        margin: 10px 0;
+        /* Adjust margin for vertical spacing */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial-box img {
+        width: 60px;
+        /* Smaller image on mobile */
+        height: 60px;
+        /* Smaller height on mobile */
+    }
+
+    .testimonial-box p {
+        font-size: 14px;
+        /* Slightly larger font size for readability */
+    }
+
+
+    .testimonial-box-wrapper1 {
+        animation: scroll-mobile 12s linear infinite;
+        /* Adjust animation duration for mobile */
+        gap: 30px;
+        /* Maintain the scroll effect for mobile view */
+    }
+
+    .testimonial-box1 {
+        flex: 0 0 100%;
+        /* Full width for each box on mobile */
+        margin: 10px 0;
+        /* Adjust margin for vertical spacing */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonial-box1 img {
+        width: 60px;
+        /* Smaller image on mobile */
+        height: 60px;
+        /* Smaller height on mobile */
+    }
+
+    .testimonial-box1 p {
+        font-size: 14px;
+        /* Slightly larger font size for readability */
+    }
+
+    /* Animation keyframes for mobile */
+    @keyframes scroll-mobile {
+        0% {
+            transform: translateX(0);
+            /* Start position */
+        }
+
+        100% {
+            transform: translateX(-300%);
+            /* Move left by the width of 1 box */
+        }
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+
+    .navbar {
+        width: 90vw !important;
+    }
+
+    .hero-section {
+        padding: 6rem 2rem !important;
+        margin: 0 !important;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .h-service>div {
+        padding: 0 !important;
+    }
+
+    .h-service .row {
+        padding: 0 !important;
+    }
+
+    .h-gallery .row {
+        display: flex;
+        /* Ensure all images align as flex items */
+        flex-wrap: wrap;
+        /* Allow wrapping for smaller screens */
+    }
+
+    .h-gallery img {
+        width: 100%;
+        /* Make images responsive */
+        height: auto;
+        /* Set a fixed height for all images */
+        object-fit: cover;
+        /* Ensure the image covers the area without distortion */
+    }
+
+}
